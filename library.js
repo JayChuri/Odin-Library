@@ -1,4 +1,4 @@
-console.log("Hello World");
+
 const cardsContainer = document.getElementById("cards");
 /**@type {HTMLFormElement} */
 const form = document.getElementById("book-form");
@@ -49,7 +49,7 @@ add_book_button.addEventListener("click", () => {
   
   form_div.style.display = "flex";
   add_button_div.style.display = "none";
-  console.log("button clicked");
+  
 });
 
 function createBookCard(book) {
@@ -128,7 +128,7 @@ function toggleRead(bookId){
   // Update the text in the card
   const statusParagraph = card.querySelector('p:nth-child(4)');
   statusParagraph.innerHTML = `<strong>Status:</strong> ${book.is_read ? 'Read' : 'Not Read'}`;
-  console.log(Books);
+  
 }
 
 addBook("To Kill a Mockingbird", "Harper Lee", 281, true);
@@ -136,11 +136,6 @@ addBook("1984", "George Orwell", 328, false);
 addBook("The Great Gatsby", "F. Scott Fitzgerald", 180, true);
 addBook("The Catcher in the Rye", "J.D. Salinger", 214, false);
 addBook("Pride and Prejudice", "Jane Austen", 279, true);
-//addBook("The Hobbit", "J.R.R. Tolkien", 310, true);
-//addBook("Fahrenheit 451", "Ray Bradbury", 194, false);
-//addBook("Moby-Dick", "Herman Melville", 585, false);
-//addBook("The Odyssey", "Homer", 374, true);
-//addBook("Crime and Punishment", "Fyodor Dostoevsky", 430, false);
 
 
-console.log(Books);
+
