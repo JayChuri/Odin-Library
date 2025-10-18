@@ -1,0 +1,80 @@
+:root {
+  --background-color: #696969;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  
+}
+
+#heading{
+  text-align: center;
+  color: beige;
+}
+
+#new-button{
+  display: flex;
+  justify-content: center;
+}
+
+#add-new-book{
+  width: 200px;
+}
+#form {
+  display: none;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center;
+  color: beige;
+}
+
+#book-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  gap: 16px;
+  max-width: 600px;
+}
+
+#form-label {
+  text-align: center;
+}
+
+#cards{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  color: beige;
+  padding: 20px;
+  justify-content: center;
+   /* Centers the grid when there's space */
+    
+
+}
+
+#card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  
+  
+}
+
+#card > button{
+  width: 200px;
+  align-self: center;
+}
+
+#card button:first-of-type{
+  margin-top: auto;
+}
+
